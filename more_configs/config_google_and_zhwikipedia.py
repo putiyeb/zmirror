@@ -33,7 +33,7 @@ my_host_scheme = 'http://'
 my_host_port = None  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
 
 # ############## Target Domain Settings ##############
-target_domain = 'www.google.com.hk'
+target_domain = 'www.google.com'
 target_scheme = 'https://'
 
 # 这里面大部分域名都是通过 `enable_automatic_domains_whitelist` 自动采集的, 我只是把它们复制黏贴到了这里
@@ -212,6 +212,9 @@ external_domains = (
     'm.googlemail.com',
     'mail-settings.google.com',
     'm.android.com',
+    'www.worldcat.org',
+    "www.ixquick.com",
+    "kindle-1276.appspot.com",
 )
 
 # 强制所有Google站点使用HTTPS
@@ -220,7 +223,7 @@ force_https_domains = 'ALL'
 # 自动动态添加域名
 enable_automatic_domains_whitelist = True
 domains_whitelist_auto_add_glob_list = (
-    '*.google.com', '*.gstatic.com', '*.google.com.hk', '*.googleapis.com', "*.googleusercontent.com",)
+    '*.google.com', '*.gstatic.com', '*.google.ca', '*.googleapis.com', "*.googleusercontent.com", '*.blogspot.com', '*.tumblr.com', '*.blogger.com', '*.googlevideo.com', '*.oclc.org', '*.ixquick.com', '*.appspot.com',)
 
 # ############## Proxy Settings ##############
 # 如果你在墙内使用本配置文件, 请指定一个墙外的http代理
