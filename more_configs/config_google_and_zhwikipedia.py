@@ -28,8 +28,8 @@
 # Github: https://github.com/aploium/zmirror
 
 # ############## Local Domain Settings ##############
-my_host_name = 'dockhero-concentric-76786.dockhero.io'
-my_host_scheme = 'http://'
+my_host_name = 'dockhero-concentric-76786-flexible-ssl.dockhero.io'
+my_host_scheme = 'https://'
 my_host_port = None  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
 
 # ############## Target Domain Settings ##############
@@ -248,6 +248,10 @@ url_custom_redirect_list = {
     # 这是gmail
     '/gmail': '/extdomains/mail.google.com/mail/u/0/h/girbaeneuj90/',
 }
+
+plain_replace_domain_alias = [
+    ('http://dockhero-concentric-76786-flexible-ssl.dockhero.io','https://dockhero-concentric-76786-flexible-ssl.dockhero.io'),
+]
 
 # ############# Additional Functions #############
 # 移除google搜索结果页面的url跳转
